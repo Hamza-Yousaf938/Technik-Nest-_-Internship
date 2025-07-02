@@ -1,0 +1,9 @@
+body {
+  background-color:white;
+  font-family:'Times New Roman', Times, serif;
+  text-align: center;
+  text-transform: capitalize;
+}
+h1 {
+  color:blue;
+}
