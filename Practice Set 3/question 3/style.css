@@ -1,0 +1,137 @@
+* {
+    padding: 0px;
+    margin:0px;
+     
+}
+#navbar {
+       height:60px ;
+        display: flex;
+        align-items: center;
+    background-color:blue;
+     padding:0 24px;
+    gap:0;  
+}
+#brand{
+  display:flex;              /* puts img and text side‑by‑side */
+  align-items:center;        /* vertically centers them */
+  text-decoration:none;      /* no underline */
+  margin-right:auto;         /* pushes all other links to the right */
+}
+.brand-logo{
+  height:38px;               /* fits inside 60‑px bar */
+  width:auto;
+  margin-right:6px;          /* tiny breathing room; use 0 if you want them touching */
+}
+/* brand text */
+.brand-text{
+  color:orange;
+  font-size:1.5rem;          /* ≈24 px */
+  font-weight:bold;
+}
+.nav-logo{
+    height:38px;             /* fits neatly inside a 60‑px bar */
+    width:auto;  
+     margin-left:38px;            /* keeps aspect ratio */
+}
+#logo {
+    color:orange;
+    font-size:x-large;
+    font-weight: bold;
+       margin:0;
+}
+#navbar a {
+  margin-left: 100px;
+  color: white;
+  text-decoration:dashed;
+  font-size: 16px;
+}
+
+/* Hero Section (2 Columns) */
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 60px 80px;
+  background-color: white;
+}
+
+.left {
+  flex: 1;
+  padding-right: 50px;
+}
+
+.left h1 {
+  font-size: 40px;
+  color: #2c3e50;
+  margin-bottom: 20px;
+}
+
+.left h1 span {
+  color: orange;
+}
+
+.left p {
+  font-size: 18px;
+  color: #444;
+  margin-bottom: 30px;
+  line-height: 1.6;
+}
+
+.left button {
+  height: 40px;
+  width: 120px;
+  border-radius: 20px;
+  background-color: orange;
+  color: white;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+}
+
+.right {
+  flex: 1;
+  display: flex;
+  justify-content:flex-end;
+  align-items: center;
+}
+
+.right img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+.hero-img-wrapper{
+  position:relative;
+  width: 70%;
+  max-width:420px;    /* hard limit in case screen is huge (tweak) */
+    margin-right:0;     /* hug the right edge */     /* hugs the image’s natural width */
+}
+/* Main hero picture */
+.hero-img{
+  display:block;
+        /* tweak as you like */
+  width:50%;
+  height:auto;
+   
+  border-radius:12px;
+}
+
+/* ----- Floating icons: shared rules ----- */
+.icon{
+  position:absolute;
+  width:20%;            /* icon size */
+  height:auto;
+  filter:drop-shadow(0 4px 6px rgba(0,0,0,.15));
+}
+
+/* Individual positions — adjust top / left / right to taste */
+.icon-growth     { top:  8%; left:  -14%; }
+.icon-star       { top: -10%; right:  6%; }
+.icon-coins      { bottom: 30%; right: -16%; }
+.icon-analytics  { bottom: -12%; left:  -8%; }
+
+/* Responsive tweak: shrink icons below 768 px */
+@media (max-width:768px){
+    .hero-img-wrapper{ width:70%; max-width:none; }
+  .icon{ width:20%; }
+}

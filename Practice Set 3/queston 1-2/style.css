@@ -1,0 +1,31 @@
+.traffic {
+   padding: 20px 30px;
+    background-color:black;
+    border-radius: 25px;
+    width:max-content;
+    align-items:center;
+}
+
+
+.light {
+    height: 100px;
+    width: 100px;
+    
+    border-radius: 50px;
+    margin-top: 10px;
+
+}
+.red{
+  
+    background-color:red;
+  
+
+}
+.yellow {
+
+    background-color:yellow;
+
+}
+.green {
+    background-color: green;
+}
