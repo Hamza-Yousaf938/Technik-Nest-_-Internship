@@ -2,15 +2,20 @@
 .navbar {
     height: 50px;
     width: 1250px;
-    color: black;
     display: flex;
     justify-content:space-between;
     align-items: center;
+     color: #555555;
 }
 .navbar button {
     font-size: larger;
     background-color: crimson;
     margin-left: 30px;
+    cursor: pointer;
+}
+a {
+  color: black;
+  text-decoration: none;
 }
 /**                                     hero                        **/
 .hero {
@@ -39,6 +44,8 @@
     display:inline-block;
     justify-content: center;
     align-items: center;
+    color: #555555;
+    font: 14px Rubik, sans-serif;
 
 }
 .hero-section span {
@@ -53,6 +60,9 @@
 .end {
     height: 400px;
     width: 500px;
+    /* background-color: blue; */
+    color: #555555;
+    font: 16px Rubik, sans-serif;
  
 }
 .end span {
@@ -61,4 +71,51 @@
 }
 .end ul {
     margin-left: 60px;
+}
+/**                                   box style                **/  
+.box {
+  width: 300px;
+  height: 300px;
+  border: 3px solid #3498db;
+  position: relative;
+  overflow: hidden;
+  margin: 50px auto;
+  background-color: #f0f0f0;
+  margin-left: 300px;
+}
+.ball {
+  width: 40px;
+  height: 40px;
+  background-color: #e74c3c;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  animation: bounce 4s infinite ease-in-out;
+} 
+@keyframes bounce {
+  0% {
+    top: 0;
+    left: 0;
+  }
+  25% {
+    top: 0;
+    left: 260px;
+  }
+  50% {
+    top: 260px;
+    left: 260px;
+  }
+  75% {
+    top: 260px;
+    left: 0;
+  }
+  100% {
+    top: 0;
+    left: 0;
+  }
+}
+.boxs {
+  display: flex;
+  flex-direction: row;
 }
